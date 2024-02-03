@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="./app.js" defer></script>
+    <link rel="icon" href="./assets/botao 1.png" type="image/x-icon">
+    <title>The Bombe</title>
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="./assets/logo1.png" alt="">
+    </header>
+    <main class="conteudo">
+      <section class="entrada">
+        <div>
+            <textarea id="texto" class="conteudo__texto" type="text" name="texto" rows="30" cols="90" placeholder="Digite sua mensagem aqui..."></textarea>
+            <p id="msg"><img src="./assets/bi_exclamation-circle-fill.jpg" alt="">Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="conteudo__botoes">
+            <button id="encriptar" onclick="encriptar()" class="conteudo__encriptar">Criptografar</button>
+            <button id="descriptar" onclick="descriptar()" class="conteudo__desencriptar">Descriptografar</button>
+          </div>
+      </section>
+        
+        <section class="saida">
+          <p id="resultado" class="conteudo__resultado"></p>
+          <div id="imagens" class="conteudo__container">
+            <div class="conteudo__imagem">
+            <img src="./assets/boneco.png" alt="Ilustração rotor da the bombe" />
+        </div>
+    </div>
+          <div class="mensagem">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+
+            
+          <button class="copiar" onclick="copiarMensagem()">Copiar</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por: <a class="link" href="https://github.com/Alexnderp" target="_blank">Thallys_dev</a></p>
+    </footer>
+  </body>
+</html>
